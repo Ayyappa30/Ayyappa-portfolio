@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #74d0ef;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -42,6 +43,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+    background: linear-gradient(to right, #b29edb, #e1e5e1);
 }
 
 section {
