@@ -12,3 +12,16 @@ document
     // Clear the form
     document.getElementById("contact-form").reset();
   });
+
+function sendEmail(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  emailjs.sendForm("service_8g7a24q", "template_9ejhqiu", "#contact-form").then(
+    function (response) {
+      alert("SUCCESS!", response.status, response.text);
+    },
+    function (error) {
+      alert("FAILED...", error);
+    }
+  );
+}
